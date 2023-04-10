@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Service Sign Up
+{% endblock %}
+
+{% if messages %}
+        {% for msg in messages %}
+            <p>{{msg}}</p>
+        {% endfor %}
+{% endif %}
+{% block main %}
+<h3 class="heading">Sign up for a Service</h3>
+        <div class="form-container"></div>
+            <form name="ServiceForm" class="form" action="{{ url_for('update_service') }}" method="POST">
+            
+               {{ form.hidden_tag() }}
+               <p>
+                    {{ form.service }}
+                    {{ form.service_date }}
+               </p>
+               {{ form.submit }}
+             </form>
+        </div>
+{% endblock %}

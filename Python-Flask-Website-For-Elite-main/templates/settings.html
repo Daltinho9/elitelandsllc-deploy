@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+{% block title %}
+Settings
+{% endblock %}
+
+{% block main %}
+{% with messages = get_flashed_messages() %}
+    {% if messages %}
+        {% for msg in messages %}
+            <p>{{msg}}</p>
+        {% endfor %}
+    {% endif %}
+{% endwith %}
+<h3 class="heading">Settings</h3>
+        <div class="form-container"></div>
+            <form name="SettingsForm" class="form" action='/settings' method="POST">
+            
+               {{ form.hidden_tag() }}
+               <p>
+                    {{ form.email_update }}
+               </p>
+               {{ form.submit }}
+             </form>
+        </div>
+{% endblock %}

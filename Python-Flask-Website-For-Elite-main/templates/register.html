@@ -1,0 +1,47 @@
+{% extends "layout.html" %}
+
+{% block title%}
+    Sign Up
+{% endblock %}
+
+{% block main%}
+{% with messages = get_flashed_messages() %}
+    {% if messages %}
+        {% for msg in messages %}
+            <p class="alert alert-warning alert-dissmissable fade show">{{msg}}</p>
+            
+        {% endfor %}
+    {% endif %}
+{% endwith %}
+<div class="wrapper fadeInDown">
+    <div id="formContent">
+      <!-- Tabs Titles -->
+  
+      <!-- Icon -->
+      <div class="fadeIn first">
+        <!-- <img src="/img/ELLS_LOGO_B.png" alt=""/> -->
+        <h3>Please Sign Up</h3>
+      </div>
+  
+      <!-- Login Form -->
+      <form action="/register" method="post">
+        {{ form.hidden_tag() }}
+        {{ form.name }}
+        {{ form.email }}
+        {{ form.password }}
+        {{ form.submit }}
+        <!-- <input type="text" id="username" class="fadeIn second" name="username" placeholder="Username">
+        <input type="email" id="email" class="fadeIn second" name="email" placeholder="Email">
+        <input type="password" id="password" class="fadeIn third" name="password" placeholder="Password">
+        <input type="submit" class="fadeIn fourth" value="Submit"> -->
+      </form>
+  
+      <!-- Remind Passowrd -->
+     
+
+        </div>
+      </div>
+  
+    </div>
+  </div>
+{% endblock %}

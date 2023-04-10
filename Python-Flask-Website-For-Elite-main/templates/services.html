@@ -1,0 +1,52 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    services
+{% endblock %}
+
+{% block main %}
+
+    <h3 class="heading">Services</h3>
+    <div class="container-fluid">
+   
+
+    <div class="card mb-3">
+        <img class="card-img-top" src="/static/builtin/house.jpg" alt="Card image cap">
+        <div class="card-body">
+        <h5 class="card-title">Mowing</h5>
+        <p class="card-text">Premium weekly mowing service along with weedeating and blowing. </p>
+        </div>
+    </div>
+
+    <div class="card mb-3">
+        <img class="card-img-top" src="/static/builtin/mulch-bed.jpg" alt="Card image cap">
+        <div class="card-body">
+        <h5 class="card-title">Mulching</h5>
+        <p class="card-text">Fresh mulch of the customer's choice laid precisely by hand and tamped for extra stability.</p>
+        </div>
+    </div>
+
+    <div class="card mb-3">
+        <img class="card-img-top" src="/static/builtin/leafcleanup.jpeg" alt="Card image cap">
+        <div class="card-body">
+        <h5 class="card-title">Leaf clean up</h5>
+        <p class="card-text">Full yard leaf clean up including mulch beds and bushes (Usually provided in the Fall).</p>
+        </div>
+    </div>
+
+    <div class="card mb-3">
+        <img class="card-img-top" src="/static/builtin/trimming.jpg" alt="Card image cap">
+        <div class="card-body">
+        <h5 class="card-title">Trimming</h5>
+        <p class="card-text">Full service of trimming Bushes, trees, flowers and shrubs to keep everything nice and tidy.</p>
+        </div>
+    </div>
+    
+    </div>
+    <div class="services-divider"></div>
+    <div class="services-section">
+        <button type="button" class="services-btn btn btn-secondary btn-lg" id="serviceSignupBtn"><a href="/servicesignup">Sign Up for a Service</a></button>
+    </div>
+
+
+{% endblock %}
