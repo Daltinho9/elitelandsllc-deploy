@@ -21,3 +21,4 @@ tzdata==2022.7
 Werkzeug==2.2.3
 WTForms==3.0.1
 psycopg2==2.9.6
+WTForms==3.0.1
