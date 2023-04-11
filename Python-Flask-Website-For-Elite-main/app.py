@@ -7,7 +7,7 @@ from wtforms import StringField, PasswordField, SubmitField, EmailField, SelectF
 from wtforms.validators import InputRequired, Length, ValidationError, DataRequired
 from flask_bcrypt import Bcrypt
 
-app = Flask(__name__, template_folder='Python-Flask-Website-For-Elite-main/templates')
+app = Flask(__name__, template_folder='templates')
 bcrypt = Bcrypt(app)
 app.secret_key = "hello"
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///users.db'
