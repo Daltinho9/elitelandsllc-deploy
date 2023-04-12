@@ -335,6 +335,7 @@ html {
       width: 100%;
       color: white;
     }
+
   }
   
   
@@ -542,3 +543,18 @@ td{
 .row, .mb-5{
 margin-bottom: 0;
 }
+
+@media screen and (max-width: 600px) 
+  {
+    .container{
+      width: 90%;
+    }
+    .img-fluid{
+      width: 60%;
+      height: 50%;
+      margin: 0 50px;
+    }
+    .wrapper{
+      margin-top: 100px;
+    }
+  }

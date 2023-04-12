@@ -39,14 +39,14 @@ html {
   .content{
     display: flex;
     justify-content: center;
+    align-items: center;
+    height: 100vh;
   }
 
 
   .welcomemsg h2 {
     font-size: 50px;
     color: white;
-    position: relative;
-    top: 400px;
     padding: 0 20px;
   }
   
